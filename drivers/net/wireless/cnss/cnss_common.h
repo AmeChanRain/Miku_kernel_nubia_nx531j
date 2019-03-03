@@ -42,6 +42,9 @@ struct cnss_dev_platform_ops {
 	int (*unregister_tsf_captured_handler)(void *adapter);
 	int (*set_sleep_power_mode)(enum cnss_sleep_power_mode mode);
 };
+extern const char* ztemt_get_hw_wifi(void);
+#define SFEFG77B_WIFI_FRONT_END_VERSION "wifi_samsung"
+#define QM48184_WIFI_FRONT_END_VERSION "wifi_qorvo"
 
 int cnss_pci_request_bus_bandwidth(int bandwidth);
 int cnss_sdio_request_bus_bandwidth(int bandwidth);
